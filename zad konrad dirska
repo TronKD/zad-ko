@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <string>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+int main(int argc, char** argv) {    
+    int red   = 0xff0000;
+    int grean = 0x00ff00;
+    int blue  = 0x0000ff;
+    int kolor = 0x123456;
+    
+    cout << kolor & red 
+         << hex
+         << setw(4)
+         << setfill('0');
+	cout << kolor & grean
+		 << hex  
+         << setw(4);
+    cout << kolor & blue
+		 << hex 
+         << setw(4);
+    
+    return 0;
+}
